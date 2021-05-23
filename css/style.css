@@ -311,7 +311,7 @@ iframe{
   margin-bottom: 30px;
 }
 #sns .sns-box{
-  width: 30%;
+  width: 45%;
 }
 
 /*For Mobile*/
@@ -367,4 +367,26 @@ iframe{
   input[type="text"],input[type="email"], textarea{
     max-width: 100%;
   }
+  #contact .button{
+    margin-bottom: 5%;
   }
+  #location .wrapper{
+   flex-direction: column;
+  }
+  iframe{
+    width: 100%;
+  }
+  .location-info{
+    width: 90%;
+  }
+  .location-map{
+    width:90%;
+  }
+  #sns .wrapper{
+   flex-direction: column;
+   align-items: center;
+  }
+  #sns .sns-box{
+    width: 90%;
+  }
+}
