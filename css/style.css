@@ -340,6 +340,9 @@ iframe{
     article, aside{
       width: 100%;
     }
+    .ad{
+      width: 20%;
+      order: 3;
   /*menu*/
   .menu-content{
     margin-top: 20%;
