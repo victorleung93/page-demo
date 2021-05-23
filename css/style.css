@@ -229,7 +229,7 @@ aside p{
 .grid{
   display: grid;
   gap: 26px;
-  grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
   margin-top:6%;
   margin-bottom: 50px;
 }
@@ -353,8 +353,7 @@ iframe{
   .big-box{
     grid-column: auto;
     grid-row: auto;
-    border: 1px red solid;
-    /*margin-bottom: 5%;*/
+    margin-bottom: 5%;
   }
   .big-box img{
     height: 100%;
