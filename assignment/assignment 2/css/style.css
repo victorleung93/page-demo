@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.container{
+  margin: 2.5vh 15vw;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+.container p{
+  padding-left: 15px;
+}
+.container img{
+  max-height: 300px;
+  min-width: 300px;
+  max-width: 50vw;
+  padding: 15px;
+}
+.banner{
+  background-size: cover;
+  max-height: 20vh;
+  width: 100vw;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #96F274;
+
+}
+body{
+  background-color: #1F214D;
+  color: #C6F5B5;
+  font-family: Verdana;
+  line-height: 150%;
+}
+
+ul {
+list-style-type: circle;
+}
+
+a{
+  color: #5EDBD0;
+}
+
+footer{
+  border-top: 2px solid #C6F5B5;
+  position: absolute;
+}
