@@ -1,159 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Web interface Design - Assignment 1</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="index_css/style.css">
-  <!--Student Name: Victor, Ching Yiu Leung, Student Number: 301221975
-  -->
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WCB Cafe</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="description" content="提供綜合咖啡與健康有機食物的咖啡店">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-background" id="home">
 
-<body>
-    <header>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Hong_Kong_skyline_night_lights.jpg" width="100%" alt="a banner picture">
-      <h3>Web Interface Design: <br>COURSE COMP213-004 Winter 2022 <br>ASSIGNMENT #1</h3>
-      <hr>
-      <p>Student Name: Victor, Ching Yiu Leung</p>
-      <p>Student Number: 301221975</p>
-      <hr>
-    </header>
-    <main>
-      <h1>Student Web Page</h1>
-      <div class="Assignment">
-        <a href="assignment 2\assignment2.html" target="_blank">Assignment2</a><br>
-        <a href="assignment 3\assignment3.html" target="_blank">Assignment3</a><br>
-        <a href="assignment 4\assignment4.html" target="_blank">Assignment4</a><br>
-        <a href="Term Project\homepage.html" target="_blank">Term Project</a><br>
-        <a href="JS Assignment 4\homepage.html" target="_blank">JS Assignment 4</a><br>
-        <a href="JS Assignment 5\homepage.html" target="_blank">JS Assignment 5</a><br>
-        <a href="JS Assignment 6\homepage.html" target="_blank">JS Assignment 6</a><br>
-      </div>
-      <div class="smileyface">
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="orange">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="green">
-          <div class="face"></div>
-        </label>
-        <label>
-          <input type="radio" name="pink">
-          <div class="face"></div>
-        </label>
-        </div>
-    </main>
-</body>
-<footer>
-    <hr>
-    <h4>&copy All copyright reserved to Victor Ching Yiu Leung, student number: 301221975, Web interface Design, Winter 2022.</h4>
-</footer>
+
+  <header class="page-header wrapper">
+  <h1><a href="index.html"><img src="images/logo.svg" alt="WCB Cafe 首頁" class="logo"></a></h1>
+  <nav>
+    <ul class="main-nav">
+      <li><a href="news.html">News</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div class="home-content wrapper"><!--Home Content-->
+  <h2 class="page-title">We'll Make Your Day!</h2>
+  <p>想不想待在時尚咖啡店裡放鬆身心？用無人工添加物的食材讓身體由內而外煥一新。</p>
+  <a href="menu.html" class="button">菜單介紹</a>
+  </div>
+  </div>
+  </body>
 </html>
