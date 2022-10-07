@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.container{
+  margin: 2.5vh 20vw 2.5vh 15vh;
+}
+
+.container p{
+  padding-left: 15px;
+  color: white;
+}
+
+.banner{
+  background-size: cover;
+  height: 200px;
+  width: 100vw;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(212, 223, 56);
+}
+.banner img{
+  border: 1px solid transparent;
+}
+.banner img:hover{
+  border: 1px solid rgb(212, 223, 56);
+}
+body{
+  background-color: rgb(70, 70, 72);
+  color: #ffffff;
+  font-family: Verdana;
+  line-height: 200%;
+}
+fieldset{
+  margin: 5vh 0vh;
+  border: 1px solid rgb(192, 203, 36);
+  border-radius: 10%
+}
+h1{
+  color: white;
+  font-size: 200%;
+}
+
+h2, h3, h4{
+  color: rgb(212, 223, 56);
+  padding-left: 5px;
+}
+
+legend{
+  color: rgb(212, 223, 56);
+  font-size: 200%;
+  margin-left: 60px;
+  padding: 5px;
+}
+
+a{
+  color: #5EDBD0;
+}
+
+footer{
+  border-top: 2px solid rgb(212, 223, 56);
+  position: absolute;
+}
+
+input, textarea{
+  margin-left:35px;
+  border: 2px black solid;
+  border-radius: 10%;
+  line-height: 150%;
+}
+.instructor h5{
+  font-size: 125%;
+}
+.studentinfo{
+  padding-left: 0px;
+}
+.button{
+  color: rgb(212, 223, 56);
+  background-color: #333;
+  font-size: 150%;
+  border-radius: 10%;
+}
+.button:hover{
+  background-color: #444;
+}
+.button:active{
+  font-size: 170%;
+}
+button a{
+  color: black;
+}
+button:hover{
+  background-color: rgb(212, 223, 56);
+}
+.home{
+  text-align: right;
+  padding-right: 50px;
+}
