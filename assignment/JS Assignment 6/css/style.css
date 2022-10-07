@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/*
+red: #a03237
+violet: #863499
+grey: #726588
+Yellow： #f5db08
+*/
+
+
+.container{
+  margin: 2.5vh auto;
+  width: 50vw;
+  max-width: 1000px;
+  border-left : 5px solid #a03237;
+  border-right: 5px solid #863499;
+}
+body{
+  background-color: #201520;
+}
+a{
+  color: #FFF;
+  text-decoration: none;
+}
+h1,h2,h3,h4,p{
+  color: #f5db08;
+  padding-left: 20px;
+  font-family: "Nunito Sans",sans-serif;
+}
+footer{
+  color: #FFF;
+}
+
+nav{
+  width: 100vw;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #863499;
+}
+nav ul{
+  display: flex;
+  padding-left:100px;
+  width: 80%
+}
+nav li{
+  border: 3px transparent solid;
+  margin-left: 10px;
+  padding-left:0px;
+  list-style: none;
+  color: #a03237;
+  min-width: 150px;
+  width: 20vw;
+  text-align: center;
+}
+nav li:hover{
+  color: #red;
+  border-bottom: 3px solid #863499;
+  border-right: 3px solid #863499;
+  border-top: 3px solid #a03237;
+  border-left:3px solid #a03237;
+  transition: 0.5s;
+}
+.title h1{
+  position: absolute;
+  top: 33px;
+  left: 25vw;
+  font-size: 3.5rem;
+  font-family: "Nunito Sans",sans-serif;
+  font-weight: bold;
+
+}
+.container p{
+  font-family: "Nunito Sans",sans-serif;
+}
+.banner{
+  background-size: cover;
+  height: 160px;
+  width: 100vw;
+  padding: 10px;
+  margin-bottom: 0px;
+  border-bottom: 3px solid #a03237;
+  display: flex;
+  flex-direction: row;
+}
+.banner img{
+  border: 3px solid transparent;
+  height: 150px;
+  width: 150px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0%;
+}
+.banner img:hover{
+  border: 3px solid #AEAEAE;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.photogallery{
+  margin: 0vh auto 1vh auto;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+.info{
+  margin: 5vh auto;
+  width: 50vw;
+  height: 15vh;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.return{
+  margin: 0vh auto;
+  width: 50vw;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.photoarea{
+  width: 24vw;
+  height: 24vw;
+  min-width: 320px;
+  min-height: 320px;
+  margin: auto 3rem;
+  display: flex;
+  justify-content: center;
+}
+#image1{
+  width: 20rem;
+  height: 20rem;
+  margin: auto;
+  -webkit-animation: fadeout 5s linear infinite;
+}
+
+@-webkit-keyframes fadeout{
+  0%{
+    opacity: 0;
+  }
+  5%{
+    opacity: 100;
+  }
+  95%{
+    opacity: 100;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+button{
+  margin: auto 3rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0%;
+  border: 0px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+button img:hover{
+  box-shadow:
+  -3px 3px #04fc43;
+}
+button img:active {
+  box-shadow: 3px -3px red;
+}
+button img{
+ background-color: #f5db08;
+ border-radius: 50%;
+}
+.sidebar{
+  position: absolute;
+  top: 250px;
+  width: 22vw;
+  height: 86.625vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+#left{
+  left: 2vw;
+  background-image: url("../image/left.png");
+}
+#right{
+  right: 2vw;
+  background-image: url("../image/right.png");
+}
+
+#circlearea{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  padding: 1rem;
+}
+svg{
+  transform: rotate(270deg);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+svg circle{
+  fill: transparent;
+  stroke-width: 2;
+  stroke: #04fc43;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  -webkit-animation: anim 5s linear infinite;
+
+}
+
+@-webkit-keyframes anim {
+  33%{
+    stroke-dashoffset:800;
+    stroke:blue;
+  }
+  66%{
+    stroke-dashoffset:400;
+    stroke:red;
+  }
+  100%{
+    stroke-dashoffset:0;
+    stroke:#04fc43;
+    stroke-width:5;
+  }
+}
+#pokeball{
+  width:150px;
+  height: 150px;
+}
+
+#pokeball:hover{
+  -webkit-animation: rotate 2s ease-in-out infinite;
+}
+@-webkit-keyframes rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}

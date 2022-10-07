@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*88.7 % #151e1f Black
+6.8 % #c66b7e Pink
+2.1 % #727577 Grey
+1.5 % #cfd0d1 Grey
+0.5 % #e3adb8 Pink
+0.3 % #a2a083 Grey*/
+
+.container{
+  margin: 2.5vh auto 2.5vh auto;
+  width: 45vw;
+  min-width: 500px;
+  border-left : 3px solid #e3adb8;
+  border-right: 3px solid #c66b7e;
+}
+body{
+  background-color: #151e1f;
+}
+a{
+  color: #cfd0d1;
+  text-decoration: none;
+}
+h1,h2,h3,h4,p,label{
+  color: #FFF;
+  padding-left: 20px;
+
+}
+label{
+  font-size: 1.25rem;
+  width: 50px;
+  line-height: 2.5rem;
+}
+input{
+  width: 250px;
+  height: 25px;
+  margin: 0px 25px 25px 35px;
+
+}
+footer{
+  color: #FFF;
+}
+span{
+  color: orange;
+  margin-left: 30px;
+}
+nav{
+  width: 100vw;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #c66b7e;
+  border-top: 3px solid #e3adb8;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0px;
+}
+nav li{
+  border: 3px transparent solid;
+  margin-left: 10px;
+  text-align: center;
+  list-style: none;
+  color: #cfd0d1;
+  min-width: 150px;
+  width: 10vw;
+
+}
+nav li:hover{
+  color: #red;
+  border-bottom: 3px solid #c66b7e;
+  border-right: 3px solid #c66b7e;
+  border-top: 3px solid #e3adb8;
+  border-left:3px solid #e3adb8;
+  transition: 0.5s;
+}
+.title h1{
+  color: #fff;
+  font-size: 3.5rem;
+  padding-left: 100px;
+  font-family: 'Philosopher';
+  font-weight: bold;
+}
+#title img{
+  max-width: 500px;
+  max-height: 260px;
+  border: #cfd0d1 2px solid;
+}
+.container p{
+  color: #fff;
+  font-family:'Frank Ruhl Libre', serif;
+}
+.banner{
+  background-size: cover;
+  height: 23vw;
+  min-height: 250px;
+  width: 98vw;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+
+  display: flex;
+  flex-direction: row;
+}
+.banner img{
+  border: 3px solid #c66b7e;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45vw;
+  height: 22.5vw;
+  min-width: 500px;
+  min-height: 250px;
+}
+.banner img:hover{
+  border: 3px solid #c66b7e;
+  border-radius: 25%;
+  transition: 0.5s;
+}
+button{
+  background-color:#e3adb8;
+  margin: 40px;
+  color: #151e1f;
+  height: 50px;
+  width: 150px;
+  border: 3px solid #c66b7e;
+  border-radius: 10%;
+}
