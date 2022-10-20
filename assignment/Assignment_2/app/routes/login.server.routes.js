@@ -1,7 +1,13 @@
+var userController = require('../controllers/login.server.controllers')
+const passport          = require('passport');
 module.exports = function(app) {
     var login = require('../controllers/login.server.controllers');
+    app.get('/login', userController.render)
     
-    app.use("/login", (req, res) =>{
-        res.render('login', {title: "Login Page"})
-    })
+    app.post('/login', passport.authenticate('local', {
+        successRedirect: '/business',
+        failureRedirect: '/login'
+    }));
+    
+    
 };

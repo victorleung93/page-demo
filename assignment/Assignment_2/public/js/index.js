@@ -63,3 +63,52 @@ function clearAlert(){
     document.getElementById('lnamealert').innerHTML = "";
     document.getElementById('emailalert').innerHTML = "";
 }
+
+//register 
+
+async function registerUser(event){
+    event.preventDefault();
+    const firstname = document.getElementById("reg-firstname").value;
+    const lastname = document.getElementById("reg-lastname").value;
+    const phone = document.getElementById("reg-phone").value;
+    const email = document.getElementById("reg-email").value;
+    const username = document.getElementById("reg-username").value;
+    const password = document.getElementById("reg-password").value;
+    
+    const result = await fetch('/api/register',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            firstname, lastname, phone, email, username, password
+        })
+    }).then((res)=> res.json())
+
+    if (result.status === "ok") {
+    console.log('user created');
+    alert("user created")
+    }else{
+        alert("user not created")
+    }
+}
+
+//reader
+
+async function readData(event){
+  
+  var table = document.getElementById("datatable");
+  
+
+  // Create an "li" node:
+  const node = document.createElement("tr");
+
+  // Create a text node:
+  const textnode = document.createTextNode(1);
+
+  // Append the text node to the "li" node:
+  node.appendChild(textnode);
+
+  // Append the "li" node to the list:
+  table.appendChild(node);
+}

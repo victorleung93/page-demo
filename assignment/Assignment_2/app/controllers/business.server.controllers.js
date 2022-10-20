@@ -1,3 +1,3 @@
-exports.render = function(req, res){
-        res.render('business', {title:'Business Contact List Page'});
-        };
+var User                = require('../models/users.server.model')
+
+
