@@ -199,10 +199,6 @@ button{
     color: red;
     font-size: 80%;
 }
-
-.login, .reg, .business{
-    margin:0 2.5vw;
-}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

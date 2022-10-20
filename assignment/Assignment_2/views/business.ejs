@@ -1,31 +1,29 @@
-<div class="business">
-    <h1>This is a Business Contact list</h1>
+<h1>This is a Business content list</h1>
 
-    <p>This part will only be showed when user is authenticated</p>
-    
-    <div class="reader" id="reader">
-        <table id="datatable">
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Contact Number</th>
-            </tr>
-            <tbody>
-                
-                <% for(let count = 0 ; count < content.length ; count++ ){ %>
-                    <tr>
-                        <td><%- content[count].firstname + " " + content[count].lastname %></td>
-                        <td><%- content[count].email %></td>
-                        <td><%- content[count].phone %></td>
-                    </tr>
-                <% } %>
-                    
-    
-                
-            </tbody>
+<p>This part will only show when user is authenticated</p>
+
+<div class="reader" id="reader">
+    <table id="datatable">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact Number</th>
+        </tr>
+        <tbody>
             
+            <% for(let count = 0 ; count < content.length ; count++ ){ %>
+                <tr>
+                    <td><%- content[count].firstname + " " + content[count].lastname %></td>
+                    <td><%- content[count].email %></td>
+                    <td><%- content[count].phone %></td>
+                </tr>
+            <% } %>
+                
+
             
-        </table>
+        </tbody>
         
-    </div>
+        
+    </table>
+    
 </div>
