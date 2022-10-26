@@ -1,7 +1,3 @@
-const express   = require('express');
-const router    = express.Router();
-const mongo     = require('mongodb').MongoClient;;
-const assert    = require('assert');
 var User                = require('../models/users.server.model');
 
 
@@ -19,7 +15,7 @@ module.exports = function(app) {
     app.get("/business", isLoggedIn, (req, res) =>{
         var records = User.find({})
         .then(user =>{
-            var contentLength = user.length; 
+             
             res.render('business', {title: "Business Contact List Page", content:user })
         })
         .catch(err =>{

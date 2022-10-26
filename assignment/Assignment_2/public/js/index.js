@@ -85,30 +85,56 @@ async function registerUser(event){
         })
     }).then((res)=> res.json())
 
-    if (result.status === "ok") {
-    console.log('user created');
+    if (result.status == "ok") {
     alert("user created")
+    window.location.href = "login";
     }else{
-        alert("user not created")
+        alert("user is not created")
     }
+    
 }
 
-//reader
-
-async function readData(event){
+//delete
+async function delection(id){
   
-  var table = document.getElementById("datatable");
+  const deleted = await fetch('/api/delete',{
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+          'id': id
+      }}).then((res)=> res.json())
+
+  if (deleted.status != "ok") {
+  alert("user is not delete")
+  }else{
+      alert("user deleted")
+  }
+  window.location.href = "business";
+}
+
+async function update(id){
   
 
-  // Create an "li" node:
-  const node = document.createElement("tr");
+  const phone = document.getElementById("update-phone").value;
+  const email = document.getElementById("update-email").value;
+  const username = document.getElementById("update-username").value;
 
-  // Create a text node:
-  const textnode = document.createTextNode(1);
+  
+  const update = await fetch('/api/update',{
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'id': id
+    },
+    body: JSON.stringify({
+         phone, email, username
+    })
+}).then((res)=> res.json())
 
-  // Append the text node to the "li" node:
-  node.appendChild(textnode);
-
-  // Append the "li" node to the list:
-  table.appendChild(node);
+if (update.status != "ok") {
+  alert("user is not updated")
+  }else{
+      alert("user updated")
+  }
+  window.location.href = "business";
 }

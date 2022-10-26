@@ -211,6 +211,13 @@ text-align: left;
 padding: 8px;
 }
 
-tr:nth-child(even) {
-background-color: #AED8F2;
+tr:nth-child(even), th {
+background-color: #e2bb8b;
+}
+#button-link{
+    border: 0 solid white;
+}
+#button-link:hover{
+    border: 0 solid white;
+    box-shadow:0 0 white;
 }

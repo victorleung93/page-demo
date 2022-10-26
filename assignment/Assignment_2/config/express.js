@@ -109,28 +109,33 @@ module.exports = function() {
                 firstname, lastname, phone, email, username, password
             })
             console.log("User created as: " + res1);
+             
         }catch (error){
             if(error.code === 11000){
                 console.log("duplicated");
                 return res.json({status: "error", error: "duplicated"})
             }throw error        
         }
-
-        res.json({status: "ok"})
+        
+        res.json({status: "ok"});
+        
+        
     })
-    //get data from mongodb
-
-    app.get('api/getData', async (req, res)=>{
-        console.log("1231312");
-        var records = await User.find({})
-        .then(user =>{
-            res.send(user)
-            console.log(records);
-        })
-        .catch(err =>{
-            res.status(400).send({message: err.message})
-        })
-    })
+//delete data from mongodb
+app.post('/api/delete', async (req, res)=>{
+    var id = req.headers.id;
+    
+    try{
+        const del1 = await User.deleteOne({"_id":(id)});
+        console.log("deleted");
+            
+    }catch(err){
+        console.log(err);
+    }
+    res.json({status: "ok"});
+   
+   
+})
 
 
 
@@ -143,7 +148,7 @@ module.exports = function() {
     require('../app/routes/login.server.routes.js')(app);
     require('../app/routes/business.server.routes.js')(app);
     require('../app/routes/Registration.server.routes.js')(app);
-
+    require('../app/routes/update.server.routes.js')(app);
     return app;
 };
 

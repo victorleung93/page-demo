@@ -8,6 +8,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Contact Number</th>
+            <th>Edit</th>
         </tr>
         <tbody>
             
@@ -16,11 +17,12 @@
                     <td><%- content[count].firstname + " " + content[count].lastname %></td>
                     <td><%- content[count].email %></td>
                     <td><%- content[count].phone %></td>
+                    <td>
+                        <button onclick="delection(id)"  id ="<%= content[count]._id %>" > Delete</button>
+                        <button id ="<%= content[count]._id %>" ><a id="button-link" href="/update?id=<%= content[count]._id %>">Update</a> </button>
+                    </td>
                 </tr>
             <% } %>
-                
-
-            
         </tbody>
         
         

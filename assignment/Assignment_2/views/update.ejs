@@ -1,0 +1,23 @@
+<h1>This is Update</h1>
+<form id="update-form" action="">
+    <fieldset> 
+        <legend>Update:</legend>
+        <p>What do you want to update? </p>
+        <label for="update-username">User Name: </label>
+            <input type="text" id="update-username" value="<%- content.username %>" required placeholder="username"><br>
+        <label for="update-phone">Phone: </label>
+            <input type="number" id="update-phone" value="<%- content.phone %>" required placeholder="phone"><br>
+        <label for="update-email">Email: </label>
+            <input type="text" id="update-email" value="<%- content.email %>" required placeholder="emil"><br><br>
+        
+        <button type="button" id="<%- content._id %>" onclick="back()">Cancel</button>
+        <button type="submit" id="<%- content._id %>" onclick="update(id)">Update</button>
+        <button onclick="delection(id)"  id ="<%= content._id %>" > Delete</button>
+    </fieldset>
+</form>
+
+<script>
+    function back() {
+        window.location.href = "business";
+    }
+</script>
